@@ -1,0 +1,14 @@
+[Unit]
+Description=Go-Basic-Server
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+WorkingDirectory=/home/user/go-basic
+ExecStart=/home/user/go/bin/go-basic
+StandardOutput=file:/home/user/go-basic/out.log
+StandardError=file:/home/user/go-basic/err.log
+
+[Install]
+WantedBy=multi-user.target
