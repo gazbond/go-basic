@@ -21,11 +21,11 @@ var (
 )
 
 // Load config
-func LoadConfig(name string) {
+func LoadConfig() {
 
 	// Set config path, name, type
-	viper.AddConfigPath("config")
-	viper.SetConfigName(name)
+	viper.AddConfigPath(".")
+	viper.SetConfigName("config")
 	viper.SetConfigType("json")
 
 	// Read config file

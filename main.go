@@ -7,6 +7,6 @@ import (
 // Run server
 func main() {
 
-	server.LoadConfig("prod")
+	server.LoadConfig()
 	server.Start()
 }
