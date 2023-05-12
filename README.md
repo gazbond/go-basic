@@ -10,4 +10,5 @@ cd go-basic
 go install
 npm install
 npm run build
+sudo cp go-basic.service /etc/systemd/system
 ```
