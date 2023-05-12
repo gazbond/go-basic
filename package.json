@@ -1,0 +1,11 @@
+{
+  "name": "go-basic",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "build.js"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "fs-extra": "^11.1.1"
+  }
+}
