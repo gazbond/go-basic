@@ -12,6 +12,7 @@ type Config struct {
 	Server struct {
 		Host string
 		Port int
+		Dir  string
 	}
 }
 

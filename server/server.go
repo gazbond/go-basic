@@ -15,20 +15,8 @@ func Start() {
 	engine.Use(gin.Logger())
 	engine.Use(gin.Recovery())
 
-	// GET index.html
-	engine.GET("/", func(c *gin.Context) {
-		// Response
-		c.File("./static/index.html")
-	})
-
-	// GET favicon.ico
-	engine.GET("/favicon.ico", func(c *gin.Context) {
-		// Response
-		c.File("./static/favicon.ico")
-	})
-
 	// Serve static files
-	engine.Static("/assets", "./static/assets")
+	engine.Static("/", "./static/")
 
 	// Start server
 	color.Yellow.Println("Server starting on: ", ServerUrl)
