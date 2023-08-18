@@ -6,3 +6,4 @@ npm-debug.log*
 static/assets/*
 out.log
 err.log
+go-basic
