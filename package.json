@@ -2,7 +2,8 @@
   "name": "go-basic",
   "version": "1.0.0",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js && go build",
+    "start": "./go-basic"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
